@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Landing Page Study in USA</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/eprogram.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<script type="text/javascript" href="js/els.js">
+	function validateForm(){
+		if (validateFname()) {
+			if (validateLname()) {
+				if (validateEmail()) {
+					if (validatePhonenumber()) {
+						if (validateCountry()) {
+							if (birthday()) {
+								if (validateneed()) {
+									if (validateinterest()) {
+										if (validateGender()) {
+											if (validateCheck()) {
+
+											}
+
+										}
+									}
+
+								}
+
+							}
+							
+						}
+
+					}
+					
+					
+				}
+
+			}
+			
+		}
+			return false;
+	}
+	function validateFname() {
+	var x=document.getElementById('fname').value;
+    var regex = /^[a-zA-Z\s]+$/;
+    if(regex.test(fname.value) == false){
+    document.getElementById('alrt').textContent="Name field should not be empty";
+    return false;
+    }
+    else{
+    document.getElementById('alrt').innerHTML="";
+    return true;
+    }
+}
+ function validateLname(){
+    var x=document.getElementById('lname');
+   	var regex = /^[a-zA-Z\s]+$/;
+    if(regex.test(lname.value) == false){
+    document.getElementById('alrt1').innerHTML="This field is required";
+    return false;
+    }
+    else{
+    document.getElementById('alrt1').innerHTML="";
+    return true;
+    }
+    }
+function validateEmail(){
+	var email = document.getElementById('email').value;
+	var emailFilter=/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    if (!emailFilter.test(email)) {
+       document.getElementById('alrt2').innerHTML="email pattern should be example@exe.com";
+        return false;
+    }
+    else
+    	document.getElementById('alrt2').innerHTML="";
+    	return true;
+
+}
+function validatePhonenumber(){
+	var phonenumber=document.getElementById('phonenumber');
+	var phonefilter=/^\(?([0-9]{2})\)?[-]?([0-9]{10})$/;
+	if (!phonefilter.test(phonenumber.value)) {
+       document.getElementById('alrt3').innerHTML="Phone number pattern should be 91-9090090900";
+        return false;
+    }
+    else
+    	document.getElementById('alrt3').innerHTML="";
+    	return true;
+}
+function validateCountry()
+            {
+                var e = document.getElementById("country");
+                var strUser = e.options[e.selectedIndex].value;
+
+                var strUser1 = e.options[e.selectedIndex].text;
+                if(strUser==0)
+                {
+                    document.getElementById('alrt4').innerHTML="Please select your Country";
+                }
+            }
+function birthday(){
+	var bday=document.getElementById('bdate');
+    var dob =new Date(bday.value);
+        var month = dob.getMonth();
+        var day   = dob.getDate();  
+        var year  = dob.getFullYear();
+        if((year>2017)||(year<1980)){
+        document.getElementById('alrt5').innerHTML= "Please enter valid date of birth"; 
+        return false;
+      }
+      else if(bday.value=="")
+      {
+        document.getElementById('alrt5').innerHTML= "The field is required"; 
+        return false;
+      }
+      else
+        document.getElementById('alrt5').innerHTML="";
+        return true;
+	}
+
+function validateneed()
+            {
+                var e = document.getElementById("need");
+                var strUser = e.options[e.selectedIndex].value;
+
+                var strUser1 = e.options[e.selectedIndex].text;
+                if(strUser==0)
+                {
+                    document.getElementById('alrt6').innerHTML="This field is required";
+                }
+            }
+function validateinterest()
+            {
+                var e = document.getElementById("interest");
+                var strUser = e.options[e.selectedIndex].value;
+
+                var strUser1 = e.options[e.selectedIndex].text;
+                if(strUser==0)
+                {
+                    document.getElementById('alrt7').innerHTML="This field is required";
+                }
+            }
+function validateGender()
+			{ 
+				var m=document.getElementById('male').checked;
+				var f=document.getElementById('female').checked;
+				if (m==false && f==false) {
+					document.getElementById('alrt8').innerHTML="Select any one option";
+					return false;
+				}
+				
+			}
+function validateCheck()
+			{
+				var check=document.getElementById('check').checked;
+				if(check==false){
+					document.getElementById('alrt9').innerHTML="please selct the check box."
+				}
+			}
+</script>
+</head>
+<body>
+<div class="container-fluid">
+	<header class="row head">
+	<div class="col-4">
+		<img src="images/els-logo.png" alt="elslogo">
+	</div>
+	 <div class="col-8" id="dropdown">
+  
+    <div id="google_translate_element">
+      <style type="text/css">iframe.goog-te-banner-frame{ display: none !important;}</style>
+      <style type="text/css">body {position: static !important; top:0px !important;}</style>
+    </div>
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');}
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>    
+    </div>
+	</header>
+
+ <section>
+  	<div class="container-fluid">
+  	<div class="row">
+  	<div class="col-md-12">
+  	<div class="banner-image">
+  	<img name="img1" src="images/banner4.jpg" alt="gath image" class="img-responsive" style="width: 100%">
+  	  	
+  	</div>
+  	<div class="banner-content">
+  		<h1>ELS Semi-Intensive<br> English Programs</h1>
+ 	</div>
+
+ 	</div>
+ 	</div>
+ 	</div>
+  </section>
+
+<div class="line-separator"></div>
+<div class="row">
+	<div class="col-6" style="margin-top: 2%;">
+	<div class="left">
+	<h1>Studying English with ELS will allow you to visit many exciting global destinations.</h1>
+		<p>Study English while still having the freedom to explore your surroundings. The ELS Semi-Intensive English program helps strengthen your English communication skills in the classroom, then allows you time to absorb your surroundings and practice your new skills. Your morning classes will focus on the building blocks of English proficiency: Structure and Speaking Practice or Language Studies, Vocabulary Enrichment, and a lesson in the Language Technology Center. You will have the opportunity to explore the local area in the afternoons.</p>
+		<p>Since 1961 ELS has been the leading provider of English programs on university campuses and in exciting city centers in the U.S.A. English programs are now available at ELS Centers in Australia, Canada, India, Malaysia and Panama, as well at more than sixty locations in the U.S.A. alone.	</p>
+		<h3>SEMI-INTENSIVE ENGLISH</h3>
+		<p>For those who want to learn English while still having time to explore local cities and attractions and put their improving English into practice outside the classroom.</p>
+		<p>This program includes development of the important language skills that are needed to communicate accurately and effectively:</p>
+		<ul>
+			<li>Listening</li>
+			<li>Pronunciation</li>
+			<li>Speaking</li>
+			<li>Vocabulary</li>
+		</ul>
+		<p>Classes are held only in the mornings and build a foundation for communication competency. They include:</p>
+		<ul>
+			<li> Structure and Speaking Practice or Language Studies</li>
+			<li>Vocabulary Enrichment</li>
+			<li>One lesson in our Language Technology Center</li>
+		</ul>
+		<p>Contact America! provides you with regular opportunities to meet with native English speakers, listen to guest lecturers and participate in local excursions.</p>
+		<p>Conversation is practiced using practical, real-world English.</p>		
+	</div>
+	</div>
+
+	<div class="col-6">
+	<div class="fright">
+	<h1>Contact ELS!</h1>
+	<form name="myForm" method="post" onsubmit="return validateForm()">
+	<div class="row">
+				<label for="fname" class="col-12"><span class="required">* &nbsp;
+				</span>First Name</label>
+				<input id="fname" class="form-control" type="text" name="First Name" onclick="return (validateFname())">
+				</div>
+				<div class="errmsg" id="alrt"></div>
+				<div class="row">
+				<label for="fname" class="col-12"><span class="required">* &nbsp;
+				</span>Last Name/Family Name</label>
+				<input id="lname" class="form-control" type="text" name="Last Name" onclick="return (validateLname())">
+				</div>
+				<div class="errmsg" id="alrt1"></div>
+				<div class="row">
+				<label class="col-12" onclick="return validateGender();"><span class="required">* &nbsp</span>Gender</label>
+				<div class="form-check col-12">
+				  <label class="form-check-label">
+				    <input class="form-check-input" type="radio" name="gender" id="male" value="option1" >
+				   Male
+				  </label>
+				</div>
+				<div class="form-check col-12" >
+				  <label class="form-check-label" id="gender">
+				    <input class="form-check-input" type="radio" name="gender" id="female" value="option2" >
+				    Female
+				  </label>
+				</div>
+				</div>
+				<div class="errmsg" id="alrt8"></div>
+				<div class="row">
+				<label for="email" class="col-12"><span class="required">* &nbsp</span>Email</label>
+				<input id="email" class="form-control" type="email" name="email" onclick="return validateEmail()">
+				
+				</div>
+				<div class="errmsg" id="alrt2"></div>
+				<div class="row">
+				<label for="phno" class="col-12"><span class="required">* &nbsp</span>Phone Number/Mobile Number</label>
+				<input id="phonenumber" class="form-control" type="text" name="phone_number" onclick="return validatePhonenumber()">
+				
+				</div>
+				<div class="errmsg" id="alrt3"></div>
+				<div class="row">
+				<label for="country" class="col-12"><span class="required">* &nbsp</span>Country of Residence</label>
+					<select id="country" class="form-control" value="0" onclick="return validateCountry(this)">
+					<option value="0"></option>
+					<option value="Australia">Australia</option>
+  					<option value="Sweden">Sweden</option>
+  					<option value="France">France</option>
+  					<option value="Japan">Japan</option>
+  					<option value="India">India</option>
+  					<option value="Italy">Italy</option>
+					</select>
+				</div>
+				<div class="errmsg" id="alrt4"></div>
+				<div class="row">
+				<label for="bdate" class="col-12"><span class="required">* &nbsp</span>Year Born</label>
+				<input id="bdate" class="form-control" type="date" name="Date of Birth" onclick="return birthday()">
+				</div>
+				<div class="errmsg" id="alrt5"></div>
+				
+				<div class="row">
+				<label for="help" class="col-12"><span class="required">* &nbsp</span>What do you need help with?</label>
+				<select class="form-control" id="need" value="0" onclick="return validateneed()">
+				<option value="0"></option>
+				<option value="English for Academic Purpose">English for Academic Purpose</option>
+  				<option value="General English">General English</option>
+				</select>
+				
+				</div>
+				<div class="errmsg" id="alrt6"></div>
+
+				<div class="row">
+				<label for="interest" class="col-12"><span class="required">* &nbsp</span>Where would you like to study?</label>
+				<select class="form-control" id="study" value="0" onclick="return validatestudy	(this)">
+				<option value="0"></option>
+				<option value="Australia">Australia</option>
+  				<option value="Canada">Canada</option>
+  				<option value="India">India</option>
+  				<option value="United states">United States</option>
+				</select>
+				</div>
+				<div class="errmsg col-12" id="msg8"></div>
+
+				<div class="row">
+				<label for="interest" class="col-12"><span class="required">* &nbsp</span>What center are you interested in?</label>
+				<select class="form-control" id="interest" value="0" onclick="return validateinterest(this)">
+				<option value="0"></option>
+				<option value="Toronto">Toronto</option>
+  				<option value="Vancouver">Vancouver</option>
+				</select>
+				</div>
+				<div class="errmsg" id="alrt7"></div>
+				<div class="row">
+				<div class="form-check form-check-inline">
+				  <label class="form-check-label">
+				    <input class="form-check-input" type="checkbox" id="check" value="option1" onclick="return validateCheck()"> I agree to the <a href="">Terms of Use </a>and <a href=" ">Privacy Policy</a>
+				  </label>
+				</div>
+				</div>
+				<div class="errmsg" id="alrt9"></div>
+				<center>
+				<button type="submit" class="btn btn-primary">SUBMIT</button>
+				</center>
+		
+	</form>
+		
+	</div>
+		
+	</div>
+
+</div>
+	
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+</body>
+<div id="footer">
+	<footer>© Copyright 2017 ELS Educational Services, Inc., a <a href="">Berlitz company</a>
+	<div id="key">
+	<a>Accrediation</a>&nbsp;&nbsp;
+	<a> Privacy Policy</a>&nbsp;&nbsp;
+	<a> Terms</a>
+	</div>
+	</footer>
+	
+</div>
+</html>
