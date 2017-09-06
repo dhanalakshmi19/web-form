@@ -1,0 +1,104 @@
+
+#signin{
+margin-left: 2%;	
+}
+#logo{
+	float:left;
+	padding-left:2%;
+}
+#option{
+	float:right;
+	margin-right:5%;
+	margin-top:3%;
+}
+#background{
+	height:50%;
+}
+#option a:hover{
+	background-color: red;
+}
+#first{
+	width: 25%;
+  margin-left: 38%;
+	background-color: #FFCCDD;
+}
+#in{
+	font-size:20px;
+
+	padding-left:4%;
+	padding-bottom: 8%;
+}
+.errmsg{
+  color: red;
+  font-size: 13px;
+}
+#email1{
+	font-size:18px;
+	width:90%;
+	height:5%;
+	padding-left: 4%;
+	padding-top: 2%;
+  margin-bottom: 2%;
+}
+#pwd1{
+	font-size:18px;
+	width: 90%;
+  height: 5%;
+	padding-bottom: 2%;
+	padding-left: 4%;
+  margin-bottom: 5%;
+}
+@media only screen and (max-width: 360px) {
+
+#signin{
+margin-left: 2%;  
+}
+#logo{
+  float:left;
+  padding-left:2%;
+}
+#option{
+  float:right;
+  margin-right:5%;
+  margin-top:3%;
+}
+#background{
+  height:50%;
+}
+#option a:hover{
+  background-color: red;
+}
+#first{
+  margin-left: 35%;
+  margin-right: 40%;
+  margin-bottom:5%;
+  background-color: #FFCCDD;
+}
+#in{
+  font-size:20px;
+
+  padding-left:4%;
+  padding-bottom: 8%;
+}
+.errmsg{
+  color: red;
+  font-size: 13px;
+}
+#email1{
+  font-size:18px;
+  width:90%;
+  height:5%;
+  padding-left: 4%;
+  padding-top: 2%;
+  margin-bottom: 2%;
+}
+#pwd1{
+  font-size:18px;
+  width: 90%;
+  height: 5%;
+  padding-bottom: 2%;
+  padding-left: 4%;
+  margin-bottom: 5%;
+} 
+}
+

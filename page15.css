@@ -1,0 +1,180 @@
+body{
+	background-color: #fed;
+}
+
+.container{
+	padding-top:5%;
+	width: 100% !important;
+
+
+}
+#form{
+	padding-top: 2%;
+	padding:2%;
+	margin-left: 30%;
+	margin-right: 30%;
+	background-color: black;
+	border:none;
+	border-radius: 4px;
+}
+#bot{
+	width: 45%;
+	padding: 2%;
+	padding-right:2%;
+	background-color: #00cc77;
+	font-size: 18px;
+	color: white;
+}
+#bot:hover{
+	cursor: pointer;
+	background-color: #fed;
+	color: black;
+	transition: 1s;
+}
+#bot2{
+	width: 45%;
+	padding: 2%;
+	padding-right:2%;
+	font-size: 18px;
+}
+#bot2:hover{
+	cursor: pointer;
+	background-color: #fcc345;
+	color: white;
+	transition: 1s;
+}
+#fname{
+	margin:2%;
+	width:40%;
+	font-size: 18px;
+	padding:1%;
+}
+#lname{
+	margin-right: 8%;
+	width:40%;
+	font-size: 18px;
+	padding:1%;
+
+	float: right; margin-top:-47px;
+}
+#email, #password{
+	font-size: 18px;
+	width: 88%;
+	padding:1%;
+	margin: 2%;
+}
+.errmsg{
+	color: white;
+	margin-left: 2%;
+}
+#alrt1{
+margin-left: 50%;
+}
+#bot1{
+	width:91%;
+	font-size: 20px;
+	padding: 3%;
+	background-color:white;
+	color: white;
+	border-radius: 4px;
+	margin:2%; 
+	background-color: #00cc77;
+}
+#bot1:hover{
+	cursor: pointer;
+	background-color: #FED;
+	color:black;
+	transition: 1s;
+
+}
+@media only screen and (max-width: 360px) {
+	body{
+	background-color: #fed;
+}
+
+.container{
+	padding-top:5%;
+	width: 100% !important;
+
+}
+#form{
+	padding-top: 2%;
+	padding:2%;
+	margin-left: 8%;
+	margin-right: 8%;
+	background-color: black;
+	border:none;
+	border-radius: 4px;
+}
+#bot{
+	width: 45%;
+	padding: 2%;
+	padding-right:2%;
+	background-color: #00cc77;
+	font-size: 18px;
+	color: white;
+	padding-left: 2%;
+}
+#bot:hover{
+	cursor: pointer;
+	background-color: #fed;
+	color: black;
+	transition: 1s;
+
+}
+#bot2{
+	width: 45%;
+	padding: 2%;
+	padding-right:2%;
+	font-size: 18px;
+}
+#bot2:hover{
+	cursor: pointer;
+	background-color: #fcc345;
+	color: white;
+	transition: 1s;
+}
+#fname{
+	margin:2%;
+	width:40%;
+	font-size: 18px;
+	padding:1%;
+}
+#lname{
+	margin-right: 8%;
+	width:40%;
+	font-size: 18px;
+	padding:1%;
+
+	float: right; margin-top:-39px;
+}
+#email, #password{
+	font-size: 18px;
+	width: 88%;
+	padding:1%;
+	margin: 2%;
+}
+.errmsg{
+	color: white;
+	margin-left: 2%;
+}
+#alrt1{
+margin-left: 50%;
+}
+#bot1{
+	width:91%;
+	font-size: 20px;
+	padding: 3%;
+	background-color:white;
+	color: white;
+	border-radius: 4px;
+	margin:2%; 
+	background-color: #00cc77;
+}
+#bot1:hover{
+	cursor: pointer;
+	background-color: #FED;
+	color:black;
+	transition: 1s;
+
+}

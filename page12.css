@@ -1,0 +1,101 @@
+
+#image{
+	background-image: url("../images/background1.jpg");
+	width:100%;
+	padding-top: 5%;
+	padding-bottom: 25%;
+}
+#position{
+	padding-left:  8%;
+	margin-bottom: 8%;
+}
+#center{
+	position: relative;
+	margin-left: 35%;
+	margin-right: 35%;
+	background-color:white;
+	
+	padding-top: 2%;
+	padding-bottom: 4%;
+
+}
+.errmsg{
+	color: red;
+}
+.image1{
+	
+	width:30%;
+	
+
+}
+.sign{
+	font-size: 30px;
+}
+.colo{
+	color: #0af;
+}
+.colo:hover{
+	cursor: pointer;
+	color: black;
+}
+.colo1{
+	color: #0af;
+}
+.colo1:hover{
+	cursor: pointer;
+	color: black;
+}
+#field{
+	width:70%;
+	padding:2%;
+	font-size: 15px;
+	padding-left: 8px;
+}
+#button{
+	margin-top: 20px;
+	width:75%;
+	padding: 2%;
+	margin-bottom: 20px;
+	background-color:#06f;
+	font-size: 16px;
+	color: white; 
+	border:none;
+}
+#button:hover{
+	cursor: pointer;
+
+}
+#no{
+	font-size: 13px;
+}
+#footer{
+	float:right;
+	margin-top: 22%;
+	
+	color: white;
+	background-color: black;
+	width:100%;
+	padding-bottom: 1%;
+	padding-top: 1%;
+}
+footer{
+	float: right;
+	width:100%;
+	padding-bottom: 1%;
+	font-size: 12px;
+}
+#bot1{
+	margin-left:75%;
+}
+#bot2{
+	margin-left: 2%;
+}
+#bot3{
+	margin-left: 2%;
+}
+#bot2:hover{
+	cursor: pointer;
+}
+#bot3:hover{
+	cursor: pointer;
+}

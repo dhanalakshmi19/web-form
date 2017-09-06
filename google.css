@@ -1,0 +1,313 @@
+.container{
+    width: 28% !important;
+    border:1px solid #ddd;
+    margin-top: 5%;
+    padding: 2%;
+
+
+}
+#img1{
+    width:20%;
+}
+.errmsg{
+    color: red;
+    margin-left: 2%;
+}
+
+#mail{
+    border:0px;
+    outline: 0px;
+    background: transparent;
+    border-bottom:1px solid black;
+    width:80%;
+    margin-left: 3%;
+    margin-top:5%;
+}
+#pwd{
+    border:0px;
+    outline: 0px;
+    background: transparent;
+    border-bottom:1px solid black;
+    width:80%;
+    margin-left: 3%;
+    margin-top:5%;
+}
+.footer{
+    float: left;
+
+    text-decoration-line:none;
+    position: relative;
+    color:#7b7b7b;
+    margin-top: 5%;
+    padding-left: 5%;
+    padding-bottom: 10%;
+
+}
+.footer a:hover{
+    cursor: pointer;
+}
+.login{
+    color:white;
+}
+.login:hover{
+    color:white;
+    text-decoration-line: none;
+}
+.select{
+    border:0px;
+    outline: 0px;
+    background-color: white;
+    position: absolute;
+}
+#forget{
+    margin-top:2%;
+    color:#176de5;
+    padding-left: 5%;
+    margin-top: 8%;
+
+}
+#forget:hover{
+    cursor: pointer;
+    
+    
+}
+#fg{
+    margin-top:2%;
+    color:#176de5;
+
+
+}
+#fg:hover{
+    cursor: pointer;
+    }
+
+    #but{
+    position: relative;
+    float:right;
+    background-color: #176de5;
+    
+    color:white;
+    font-size:15px;
+    
+    
+    border-color: #176de5;
+    margin-top:2%;
+    margin-right:15%;
+
+}
+
+#but:hover{
+    cursor: pointer;
+    color: white;
+}
+footer{
+    margin-left: 36%;
+    margin-top: 2%;
+}
+#bottom{
+    float: right;
+    margin-right: 57%;
+}
+
+@media only screen and (max-width: 768px) {
+
+.container{
+    width: 60% !important;
+    border:1px solid #ddd;
+    margin-top: 5%;
+    padding: 2%;
+}
+#img1{
+    width:30%;
+}
+
+
+
+#mail{
+    border:0px;
+    outline: 0px;
+    background: transparent;
+    border-bottom:1px solid black;
+    width:80%;
+    margin-left: 3%;
+    margin-top:5%;
+}
+.footer{
+    float: left;
+
+    text-decoration-line:none;
+    position: relative;
+    color:#7b7b7b;
+    margin-top: 5%;
+    padding-left: 5%;
+    padding-bottom: 10%;
+
+}
+.footer a:hover{
+    cursor: pointer;
+}
+.login{
+    color:white;
+}
+.login:hover{
+    color:white;
+    text-decoration-line: none;
+}
+.select{
+    border:0px;
+    outline: 0px;
+    background-color: white;
+    position: absolute;
+}
+#forget{
+    margin-top:2%;
+    color:#176de5;
+    padding-left: 5%;
+    margin-top: 8%;
+
+}
+#forget:hover{
+    cursor: pointer;
+    
+    
+}
+#fg{
+    margin-top:2%;
+    color:#176de5;
+
+
+}
+#fg:hover{
+    cursor: pointer;
+    }
+
+    #but{
+    position: relative;
+    float:right;
+    background-color: #176de5;
+    
+    color:white;
+    font-size:15px;
+    
+    
+    border-color: #176de5;
+    margin-top:2%;
+    margin-right:15%;
+
+}
+
+#but:hover{
+    cursor: pointer;
+    color: white;
+}
+footer{
+    margin-left: 36%;
+    margin-top: 2%;
+}
+#bottom{
+    float: right;
+    margin-right: 57%;
+}
+}
+
+
+@media only screen and (max-width: 360px) {
+    .container{
+    width: 90% !important;
+    border:1px solid #ddd;
+    margin-top: 5%;
+    padding: 2%;
+
+
+}
+#img1{
+    width:40%;
+}
+
+
+#mail{
+    border:0px;
+    outline: 0px;
+    background: transparent;
+    border-bottom:1px solid black;
+    width:80%;
+    margin-left: 3%;
+    margin-top:5%;
+}
+.footer{
+    float: left;
+
+    text-decoration-line:none;
+    position: relative;
+    color:#7b7b7b;
+    margin-top: 5%;
+    padding-left: 5%;
+    padding-bottom: 10%;
+
+}
+.footer a:hover{
+    cursor: pointer;
+}
+.login{
+    color:white;
+}
+.login:hover{
+    color:white;
+    text-decoration-line: none;
+}
+.select{
+    border:0px;
+    outline: 0px;
+    background-color: white;
+    position: absolute;
+}
+#forget{
+    margin-top:2%;
+    color:#176de5;
+    padding-left: 5%;
+    margin-top: 8%;
+
+}
+#forget:hover{
+    cursor: pointer;
+    
+    
+}
+#fg{
+    margin-top:2%;
+    color:#176de5;
+
+
+}
+#fg:hover{
+    cursor: pointer;
+    }
+
+    #but{
+    position: relative;
+    float:right;
+    background-color: #176de5;
+    
+    color:white;
+    font-size:15px;
+    
+    
+    border-color: #176de5;
+    margin-top:2%;
+    margin-right:15%;
+
+}
+
+#but:hover{
+    cursor: pointer;
+    color: white;
+}
+footer{
+    
+    margin-top: 2%;
+}
+#bottom{
+    float: right;
+    margin-right: 57%;
+}
+}
