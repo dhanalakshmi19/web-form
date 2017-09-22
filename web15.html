@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sign up Form</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/page15.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<script type="text/javascript" href="js/els.js">
+	function validateForm(){
+		if (validateFname()) {
+			if (validateLname()) {
+				if (validateEmail()) {
+					
+				}
+
+			}
+			
+		}
+			return false;
+	}
+	function validateFname() {
+	var x=document.getElementById('fname').value;
+    var regex = /^[a-zA-Z\s]+$/;
+    if(regex.test(fname.value) == false){
+    document.getElementById('alrt').textContent="Name field should not be empty";
+    return false;
+    }
+    else{
+    document.getElementById('alrt').innerHTML="";
+    return true;
+    }
+}
+ function validateLname(){
+    var x=document.getElementById('lname');
+   	var regex = /^[a-zA-Z\s]+$/;
+    if(regex.test(lname.value) == false){
+    document.getElementById('alrt1').innerHTML="This field is required";
+    return false;
+    }
+    else{
+    document.getElementById('alrt1').innerHTML="";
+    return true;
+    }
+    }
+function validateEmail(){
+	var email = document.getElementById('email').value;
+	var emailFilter=/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    if (!emailFilter.test(email)) {
+       document.getElementById('alrt2').innerHTML="email pattern should be example@exe.com";
+        return false;
+    }
+    else
+    	document.getElementById('alrt2').innerHTML="";
+    	return true;
+
+}
+</script>
+<body>
+<div class="container">
+	<form id="form" name="myForm" method="post" onsubmit="return validateForm();">
+	<button id="bot">Sign Up</button>
+	<button id="bot2">Log in</button>
+	<h1 style="color: white; text-align: center;">Sign Up for Free</h1>
+	<div class="col-12">
+	<label for="fname" class="col-6"> </label>
+	<input id="fname" type="text" name="First Name*" placeholder="First Name*" onchange="return validateFname()">
+	<div class="errmsg" id="alrt"></div>
+	<label for="lname" class="col-6"> </label>
+	<input id="lname" type="text" name="Last Name*" placeholder="Last Name*" onchange="return validateLname()"></div>
+	<div class="errmsg" id="alrt1"></div>
+	<label for="fname" class="col-12"> </label>
+	<input id="email" type="text" name="Email Address" placeholder="Email Address*" onchange="return validateEmail()">
+	<div class="errmsg" id="alrt2"></div>
+	<label for="fname" class="col-12"> </label>
+	<input id="password" type="text" name="Set A Password" placeholder="Set A Password*">
+	<div class="errmsg" id="alrt3"></div>
+	<button type="submit" class="btn btn-primary" id="bot1" onsubmit="return validateForm()">GET STARTED</button>	
+	</form>
+</div>
+</body>
+</html>
